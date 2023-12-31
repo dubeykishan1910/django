@@ -2,18 +2,27 @@
 
 {% block content %}
 
-<body>
-    
-    <div class="text-center">
-        <h3>ProjectX... Management at it's finest!</h3>
-        <!-- <br> -->
-        <h5>keep track of your records effectively!</h5>
-        <hr>
+    <section id="index" class="text-center">
 
-        <br>
+        <div class="container">
+            <div class="main row justify-content-evenly">
 
-        <a class="btn btn-primary" type="button" href="{% url '' %}">create your account</a>
-    </div>
-</body>
+                <h3>ProjectX... Management at it's finest!</h3>
+                    <hr>
+                    <br>
+
+                <div class="box-1 col-lg-4 col-md-12 col-12">
+                    <h5>keep track of your records effectively!</h5>
+                    
+                </div>
+
+                <div class="box-2 col-lg-6 col-md-12 col-12">
+                    
+                    <a class="btn btn-primary" type="button" href="{% url '' %}">create your account</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
 {% endblock %}
