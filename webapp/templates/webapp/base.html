@@ -10,8 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
-    <title>Document</title>
+    <title>{% block title %} base {% endblock %}</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -20,17 +19,17 @@
 </head>
 <body>
     <!-- navbar here -->
-    {% include 'webapp/navbar.html' %}
-
-    <section class="section-padding" id="home">
+    <header>
+        {% include 'webapp/navbar.html' %}
+    </header>
+    
+    <main class="section-padding" id="home">
         
         {% block content %}
 
          
         {% endblock %}
-
-
-    </section>
+    </main>
 
     <script src="{% static 'js/app.js' %}"></script>
 

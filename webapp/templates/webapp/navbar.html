@@ -35,7 +35,7 @@
   
             <li class="nav-item">
         
-              <a class="nav-link" href="{% url '' %}">Dashboard &nbsp; <i class="fa fa-home" aria-hidden="true"></i> </a>
+              <a class="nav-link" href="{% url 'dashboard' %}">Dashboard &nbsp; <i class="fa fa-home" aria-hidden="true"></i> </a>
   
             </li>
   
@@ -45,7 +45,7 @@
   
             <li class="nav-item">
   
-              <a class="nav-link" href="{% url '' %}">Sign out &nbsp; <i class="fa fa-sign-out" aria-hidden="true"></i> </a>
+              <a class="nav-link" href="{% url 'user-logout' %}">Sign out &nbsp; <i class="fa fa-sign-out" aria-hidden="true"></i> </a>
   
             </li>
   
@@ -56,7 +56,7 @@
   
         <li class="nav-item">
   
-          <a class="nav-link" href="{% url '' %}"> Register </a>
+          <a class="nav-link" href="{% url 'register' %}"> Register </a>
   
         </li>
   
@@ -66,14 +66,14 @@
   
         <li class="nav-item">
   
-          <a class="nav-link" href="{% url '' %}">Login</a>
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
   
         </li>
   
   
         {% endif %}
       
-        
+      
       </div>
   
   

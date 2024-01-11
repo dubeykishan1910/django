@@ -1,5 +1,5 @@
 h3{
-    color: rgb(177, 68, 68);
+    color: rgb(235, 225, 225);
 }
 
 .section-padding{
@@ -14,4 +14,10 @@ h3{
 
 .box-2{
     border: 2px solid olive;
+}
+
+.form-layout{
+    border-radius: 15px;
+    width: 500px;
+    border: 1px solid black;
 }

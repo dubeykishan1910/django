@@ -1,28 +1,33 @@
 {% extends 'webapp/base.html' %}
 
+{% block title %}
+index page
+{% endblock %}
+
+
 {% block content %}
 
-    <section id="index" class="text-center">
+<section id="index" class="text-center">
 
-        <div class="container">
-            <div class="main row justify-content-evenly">
+    <div class="container">
+        <div class="main row justify-content-evenly">
 
-                <h3>ProjectX... Management at it's finest!</h3>
-                    <hr>
-                    <br>
+            <h3>ProjectX... Management at it's finest!</h3>
+            <hr>
+            <br>
 
-                <div class="box-1 col-lg-4 col-md-12 col-12">
-                    <h5>keep track of your records effectively!</h5>
-                    
-                </div>
+            <div class="box-1 col-lg-4 col-md-12 col-12">
+                <h5>keep track of your records effectively!</h5>
 
-                <div class="box-2 col-lg-6 col-md-12 col-12">
-                    
-                    <a class="btn btn-primary" type="button" href="{% url '' %}">create your account</a>
-                </div>
+            </div>
+
+            <div class="box-2 col-lg-6 col-md-12 col-12">
+
+                <a class="btn btn-primary" type="button" href="{% url 'register' %}">create your account</a>
             </div>
         </div>
-        
-    </section>
+    </div>
+
+</section>
 
 {% endblock %}
